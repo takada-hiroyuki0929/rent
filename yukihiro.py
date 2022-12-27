@@ -121,19 +121,43 @@ print("2022/01に100万円繰越返済")
 print("2022/01 : " + "{:,}".format(remaining))
 # 2022/02
 remaining = math.ceil(remaining * month_rate)
-print("2021/02 : " + "{:,}".format(remaining))
+print("2022/02 : " + "{:,}".format(remaining))
 # 2022/03
 remaining = math.ceil(remaining * month_rate)
-print("2021/03 : " + "{:,}".format(remaining))
+print("2022/03 : " + "{:,}".format(remaining))
 # 2022/04
 remaining = math.ceil(remaining * month_rate)
-print("2021/04 : " + "{:,}".format(remaining))
+print("2022/04 : " + "{:,}".format(remaining))
 # 2022/05
 remaining = math.ceil(remaining * month_rate)
 remaining = remaining - 1000000
 payment += 1000000
 print("2022/05に100万円繰越返済")
-print("2021/05 : " + "{:,}".format(remaining))
+print("2022/05 : " + "{:,}".format(remaining))
+# 2022/06
+remaining = math.ceil(remaining * month_rate)
+print("2022/06 : " + "{:,}".format(remaining))
+# 2022/07
+remaining = math.ceil(remaining * month_rate)
+print("2022/07 : " + "{:,}".format(remaining))
+# 2022/08
+remaining = math.ceil(remaining * month_rate)
+print("2022/08 : " + "{:,}".format(remaining))
+# 2022/09
+remaining = math.ceil(remaining * month_rate)
+print("2022/09 : " + "{:,}".format(remaining))
+# 2022/10
+remaining = math.ceil(remaining * month_rate)
+print("2022/10 : " + "{:,}".format(remaining))
+# 2022/11
+remaining = math.ceil(remaining * month_rate)
+print("2022/11 : " + "{:,}".format(remaining))
+# 2022/12
+remaining = math.ceil(remaining * month_rate)
+remaining = remaining - 1000000
+payment += 1000000
+print("2022/12に100万円繰越返済")
+print("2022/12 : " + "{:,}".format(remaining))
 print("---------------支払い済み金額-----------------------------" )
 #payment = start - remaining
 print("支払い金額合計 : " +"{:,}".format(payment) )
