@@ -4,7 +4,8 @@ remaining = start
 payment = 0
 
 # 一ヶ月の利子 + 元本 (年利3.9%)
-month_rate = 1.0031933138078821
+#month_rate = 1.0031933138078821
+month_rate = 1 + 0.039/12
 #開始日 2019/8
 print("開始金額 : 建物代 + 手数料、火災保険料")
 print("開始金額 : " + "{:,}".format(remaining))
@@ -111,8 +112,8 @@ print("2021/11 : " + "{:,}".format(remaining))
 remaining = math.ceil(remaining * month_rate)
 print("2021/12 : " + "{:,}".format(remaining))
 # 2022/01
-print("2022/01に一部屋を5000,000で幸宏さんに移管")
-remaining = remaining + 5000000
+#print("2022/01に一部屋を5000,000で幸宏さんに移管")
+#remaining = remaining + 5000000
 remaining = math.ceil(remaining * month_rate)
 print("2022/01 : " + "{:,}".format(remaining))
 remaining = remaining - 1000000
